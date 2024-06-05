@@ -25,6 +25,6 @@
     "test": "jest"
   },
   "bin": {
-    "wetransfer": "./build/cli.js"
+    "wetransfer": "build/cli.js"
   }
 }
