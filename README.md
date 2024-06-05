@@ -4,12 +4,14 @@
 
 Upload files to WeTransfer directly from your terminal using browser automation.
 
+![cli](https://github.com/metehankurucu/wetransfer-cli/assets/43188732/1037025e-1acb-440e-8b5f-5be349160e25)
+
 ### Installation
 
-Install WeTransfer CLI globally
+Without Installation
 
 ```bash
-yarn global add wetransfer-cli
+npx wetransfer upload <path_to_your_file>
 ```
 
 or
@@ -18,17 +20,17 @@ or
 npm install -g wetransfer-cli
 ```
 
-or without installation
+or
 
 ```bash
-npx wetransfer upload <path_to_your_file>
+yarn global add wetransfer-cli
 ```
 
 ### Usage
 
 #### Upload
 
-Upload files with the `wetransfer` command:
+Upload files with the `wetransfer upload` command:
 
 ```bash
 wetransfer upload <path_to_your_file>
