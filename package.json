@@ -1,0 +1,30 @@
+{
+  "name": "wetransfer-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./build/index.js",
+  "devDependencies": {
+    "@types/chromedriver": "^81.0.5",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.13.0",
+    "@types/selenium-webdriver": "^4.1.23",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chromedriver": "^125.0.3",
+    "commander": "^12.1.0",
+    "ora": "^8.0.1",
+    "selenium-webdriver": "^4.21.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest"
+  },
+  "bin": {
+    "wetransfer": "./build/cli.js"
+  }
+}
