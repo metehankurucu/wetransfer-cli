@@ -47,12 +47,11 @@ export const upload = async (filePath: string) => {
   const transferOptionsToggle = await (
     await driver.findElement(By.id("transfer-options-icon"))
   ).findElement(By.xpath("./.."));
+
   await transferOptionsToggle.click();
   await sleep(2000);
 
-  await driver.executeScript(
-    "document.getElementsByClassName('radioinput__label')[1].click()"
-  );
+  await driver.findElement(By.id("transfer__type-link")).click();
 
   await transferOptionsToggle.click();
 

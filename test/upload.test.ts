@@ -9,7 +9,6 @@ describe("WeTransfer Upload Function", () => {
       const result = await upload(filePath);
       expect(result).toHaveProperty("url");
       expect(typeof result.url).toBe("string");
-      console.log(result);
       expect(result.url).toContain("https://we.tl");
     },
     1000 * 60 * 10
